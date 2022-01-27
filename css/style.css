@@ -85,6 +85,7 @@ body {
     left: 50%;
     width: max-content;
     transform: translateX(-50%);
+    opacity: 0;
     visibility: hidden;
     background-color: var(--dark-primary);
     font-size: 14px;
@@ -92,10 +93,12 @@ body {
     text-transform: initial;
     color: #fff;
     border-radius: 10px;
+    transition: opacity 0.2s ease-in;
     z-index: 1;
 }
 .social__link:hover .tooltip {
     visibility: visible;
+    opacity: 1;
 }
 @media screen and (max-width: 1200px){
     .container{
