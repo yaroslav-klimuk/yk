@@ -479,6 +479,19 @@ body {
     .container{
         max-width: 1140px;
     }
+    .glitch span {
+        animation: none;
+    }
+
+    .glitch::before {
+        display: none;
+        animation: none;
+    }
+
+    .glitch::after {
+        display: none;
+        animation: none;
+    }
 }
 @media screen and (max-width: 992px){
     .container{
